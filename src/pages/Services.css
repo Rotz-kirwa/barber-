@@ -1,0 +1,201 @@
+.services {
+  padding: 2rem 0;
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.special-packages {
+  margin-bottom: 4rem;
+}
+
+.special-packages h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.package-card {
+  text-align: center;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.package-card.popular {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.package-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.package-description {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.service-categories {
+  margin-bottom: 4rem;
+}
+
+.category-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.5rem;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-name {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.service-price {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.home-services,
+.unique-extras {
+  margin-bottom: 3rem;
+}
+
+.home-services h2,
+.unique-extras h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.service-card,
+.extra-card {
+  text-align: center;
+}
+
+.service-card h3,
+.extra-card h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.extra-price {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 1rem 0;
+  }
+
+  .services-header {
+    margin-bottom: 2rem;
+  }
+
+  .special-packages {
+    margin-bottom: 3rem;
+  }
+
+  .special-packages h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .package-card {
+    padding: 1.5rem;
+  }
+
+  .package-card.popular {
+    transform: none;
+    border-width: 3px;
+  }
+
+  .package-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .package-price {
+    font-size: 1.3rem;
+  }
+
+  .category-card {
+    padding: 1.5rem;
+  }
+
+  .category-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    padding: 1rem 0;
+  }
+
+  .service-name {
+    font-size: 0.95rem;
+  }
+  
+  .service-price {
+    align-self: flex-end;
+    font-size: 0.9rem;
+  }
+
+  .home-services h2,
+  .unique-extras h2 {
+    font-size: 1.6rem;
+  }
+
+  .service-card h3,
+  .extra-card h4 {
+    font-size: 1.1rem;
+  }
+}
